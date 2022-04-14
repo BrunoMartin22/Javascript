@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Source Serif Pro', serif;
+}
+body{
+   background-color: #ffe1b7;
+}
+.fondo-nad{
+    background-color: #fcb900;
+}
+.card{
+    width: 40rem;
+    margin: 120px;
+    font-family: 'Cinzel', serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 25px;
+}
+.modal{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    transition: all 500ms ease;
+    opacity: 0; 
+    visibility: hidden;
+}
+.modal-active{
+    visibility: visible;
+    opacity: 1;
+}
+.contenedor{
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+    transition: all 500ms ease;
+    position: relative;
+}
+.contenedor header{
+    padding: 10px;
+    background-color: #fcb900;
+    border-radius: 5px;
+    color: #fff;
+
+}
+.contenedor label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+#btn-modal{
+    background: rgba(0, 0, 0, 0);
+    padding: 5px 5px;
+    border: none;
+}
