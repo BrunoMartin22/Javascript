@@ -71,3 +71,34 @@ body{
     padding: 5px 5px;
     border: none;
 }
+.articuloCarrito{
+    font-family: 'Cinzel', serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Source Serif Pro', serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    flex-flow: row;
+    margin-top: 10px;
+}
+.t-carrito{
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.img-carrito{
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+.btn-eliminar{
+    border-radius: 5px;
+    background: #fcb900;
+    border-style: none;
+    padding: 3px;
+    font-family: 'Cinzel', serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Source Serif Pro', serif;
+    margin-left: 150px;
+}
+

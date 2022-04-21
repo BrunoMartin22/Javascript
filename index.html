@@ -22,7 +22,7 @@
               <a class="navbar-brand" href="#">
                 <h1>Bienvenidos a mi tienda</h1>
               </a>
-              <button id="btn-modal"><img src="img/carrito2.webp" width="40px" alt=""></button>
+              <button id="btn-modal"><img src="img/carrito2.webp" width="40px" alt=""><span class="contador-carrito">0</span></button>
             </div>
           </nav>
     </header>
@@ -38,13 +38,14 @@
         <div class="contenido">
           
         </div>
-        <footer>Precio total: $</footer>
+        <footer>Precio total: $<span id="precio-total"></span></footer>
       </div>
     </div>
 
-  
-    <script src="main.js" type="module"></script>
     <script src="stock.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+    <script src="actualizarCarrito.js" type="module"></script>
     <script src="modal.js" type="module"></script>
     <script src="carritoInicio.js" type="module"></script>
 </body>
