@@ -1,5 +1,5 @@
-const contador = document.getElementById('contador-carrito');
-const total = document.getElementById('precio-total');
+const contador = document.querySelector('.contador-carrito');
+const total = document.querySelector('.precio-total');
 
 export const actualizarCarrito = (carritoDeCompras) => {
     contador.innerText = carritoDeCompras.reduce((acc, el) => acc + el.cantidad, 0);

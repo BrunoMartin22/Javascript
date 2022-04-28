@@ -1,14 +1,13 @@
 import { actualizarCarrito } from "./actualizarCarrito.js";
 import { eliminarProducto } from "./main.js";
-import { mostrarProductos} from "./app.js"
-import { productos } from "./stock.js";
+
 
     const contenedorCarrito = document.querySelector('.contenido');
     let carritoStorage = [];
 
     document.addEventListener("DOMContentLoaded", () => {
 
-    mostrarProductos(productos);
+    
 
     if (localStorage.getItem("carrito")) {
         carritoStorage = JSON.parse(localStorage.getItem("carrito"))
@@ -27,7 +26,6 @@ import { productos } from "./stock.js";
         contenedorCarrito.appendChild(div);
 
       actualizarCarrito(carritoStorage);
-      console.log(producto.id)
       eliminarProducto(producto.id);
     })
   }

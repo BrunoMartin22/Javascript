@@ -23,6 +23,22 @@ export const mostrarProductos = (productos) => {
       const boton = document.getElementById(`boton${producto.id}`);
       boton.addEventListener('click', () =>{
         carritoInicio(producto.id);
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top-start',
+          showConfirmButton: false,
+          timer: 2000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+          }
+        })
+        
+        Toast.fire({
+          icon: 'success',
+          title: 'Añadido Correctamente'
+        })
       })
     });
 }

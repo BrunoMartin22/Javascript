@@ -19,9 +19,19 @@ export const eliminarProducto = (productoId) => {
   }
   let botonEliminar = document.getElementById(`eliminar${productoId}`);
   botonEliminar.addEventListener('click', () => {
-      botonEliminar.parentElement.remove();
+    Swal.fire({
+      title: `¿Deseas eliminar este producto?`,
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Aceptar',
+      denyButtonText: 'Cancelar',
+    }).then((resultado) =>{
+      if(resultado){
+        botonEliminar.parentElement.remove();
       carritoDeCompras = carritoDeCompras.filter(el => el.id != productoId);
       actualizarCarrito(carritoDeCompras);
+      }
+    })
   });
 }
 
