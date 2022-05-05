@@ -9,8 +9,21 @@ h1{
     font-family: 'Fraunces', serif;
     font-family: 'Source Serif Pro', serif;
 }
+h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Source Serif Pro', serif;
+}
 body{
    background-color: #ffe1b7;
+}
+.header-index{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
 }
 .fondo-nad{
     background-color: #fcb900;
@@ -102,3 +115,34 @@ body{
     margin-left: 150px;
 }
 
+.cuadro {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "puesto nombre gastos"
+      "numero name precios";
+    padding-bottom: 200px;
+    font-family: 'Cinzel', serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Source Serif Pro', serif;
+  }
+  
+  .puesto { grid-area: puesto;
+            border: 2px solid black; }
+  
+  .nombre { grid-area: nombre;
+            border: 2px solid black; }
+  
+  .gastos { grid-area: gastos;
+            border: 2px solid black; }
+  
+  .numero { grid-area: numero;
+            border: 1px solid black; }
+  
+  .name { grid-area: name;
+            border: 1px solid black; }
+  
+  .precios { grid-area: precios;
+            border: 1px solid black; }

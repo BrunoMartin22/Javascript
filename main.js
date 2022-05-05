@@ -23,10 +23,12 @@ export const eliminarProducto = (productoId) => {
       title: `¿Deseas eliminar este producto?`,
       icon: 'warning',
       showCancelButton: true,
+      buttons:true,
+      dangerMode: true,
       confirmButtonText: 'Aceptar',
       denyButtonText: 'Cancelar',
     }).then((resultado) =>{
-      if(resultado){
+      if(resultado.isConfirmed){
         botonEliminar.parentElement.remove();
       carritoDeCompras = carritoDeCompras.filter(el => el.id != productoId);
       actualizarCarrito(carritoDeCompras);

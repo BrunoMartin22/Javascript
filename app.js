@@ -44,3 +44,21 @@ export const mostrarProductos = (productos) => {
 }
 mostrarProductos(productos);
 
+
+fetch('compradores.json',{
+
+})
+.then(response => response.json())
+.then(data => {
+  data.forEach(data =>{
+    let nombre = document.querySelector('.name');
+    let precio = document.querySelector('.precios');
+    let objet = data;
+
+     console.log(data);
+
+    // objet.innerHTML = `${data.nombre}`
+    nombre.innerHTML= `${data.tipo}`
+    precio.innerHTML= `${data.gastos}`
+  });
+})
