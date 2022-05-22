@@ -57,7 +57,6 @@ fetch('compradores.json',{
 
      console.log(data);
 
-    // objet.innerHTML = `${data.nombre}`
     nombre.innerHTML= `${data.tipo}`
     precio.innerHTML= `${data.gastos}`
   });
